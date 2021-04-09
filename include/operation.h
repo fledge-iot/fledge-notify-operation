@@ -6,7 +6,7 @@
 #include <notification_service.h>
 #include <mutex>
 
-#define PLUGIN_NAME "setpoint"
+#define PLUGIN_NAME "operation"
 
 typedef NotificationService* (*FuncPtr)(void *);
 

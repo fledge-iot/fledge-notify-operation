@@ -23,7 +23,7 @@
 #include <rapidjson/pointer.h>
 #include <sstream>
 #include <unistd.h>
-#include <setpoint.h>
+#include <operation.h>
 #include <string_utils.h>
 #include <service_record.h>
 
@@ -139,24 +139,26 @@ bool OperationDelivery::notify(const string& notificationName,
 		SimpleWeb::Client<SimpleWeb::HTTP> http(addressAndPort);
 
 		string url = string("http://") + addressAndPort + "/fledge/south/operation";
+		url = "/fledge/south/operation";
 		try {
-			auto res = http.request("PUT", url, value);
+			SimpleWeb::CaseInsensitiveMultimap headers = {{"ContentType", "application/json"}};
+			auto res = http.request(string("PUT"), url, value, headers);
 			if (res->status_code.compare("200 OK"))
 			{
-				Logger::getLogger()->error("Failed to send set point operation to service %s, %s",
+				Logger::getLogger()->error("Failed to send operation to service %s, %s",
 							m_southService.c_str(), res->status_code.c_str());
 				return false;
 			}
 		} catch (exception& e) {
-			Logger::getLogger()->error("Failed to send set point operation to service %s, %s",
-						m_southService.c_str(), e.what());
+			Logger::getLogger()->error("Failed to send operation to service %s @ %s, %s, using url '%s'",
+					m_southService.c_str(), addressAndPort, e.what(), url.c_str());
 			return false;
 		}
 
 		return true;
 	}
 	catch (exception &e) {
-		Logger::getLogger()->error("Failed to send set point operation to service %s, %s",
+		Logger::getLogger()->error("Failed to send operation to service %s, %s",
 				m_southService.c_str(), e.what());
 		return false;
 	}

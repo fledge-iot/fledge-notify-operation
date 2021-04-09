@@ -41,7 +41,7 @@ include_directories(${CMAKE_BINARY_DIR})
 set(NEEDED_FLEDGE_LIBS common-lib services-common-lib plugins-common-lib)
 
 # Find source files
-file(GLOB SOURCES setpoint.cpp plugin.cpp)
+file(GLOB SOURCES operation.cpp plugin.cpp)
 
 # Find Fledge includes and libs, by including FindFledge.cmak file
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR})
