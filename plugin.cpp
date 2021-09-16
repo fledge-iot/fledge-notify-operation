@@ -41,7 +41,7 @@ using namespace rapidjson;
  *
  * lists.
  */
-const char * default_config = QUOTE({
+static const char * default_config = QUOTE({
 	"plugin": {
 		"description": "Invoke an operation of a south service",
 		"type": "string",
