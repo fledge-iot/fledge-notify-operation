@@ -1,5 +1,5 @@
 .. Images
-.. |setpoint_1| image:: images/setpoint_1.jpg
+.. |operation_1| image:: images/operation_1.jpg
 
 
 Operation Notification
@@ -14,7 +14,7 @@ Once you have created your notification rule and move on to the delivery mechani
   - Click *Next*
 
     +--------------+
-    | |setpoint_1| |
+    | |operation_1| |
     +--------------+
 
   - Configure the plugin
