@@ -14,7 +14,7 @@ Once you have created your notification rule and move on to the delivery mechani
   - Click *Next*
 
     +--------------+
-    | |operation_1| |
+    | |operation_1||
     +--------------+
 
   - Configure the plugin
