@@ -11,7 +11,7 @@
 typedef NotificationService* (*FuncPtr)(void *);
 
 /**
- * OperationDelivery class that changes the configuration of an item within FogLAMP
+ * OperationDelivery class that changes the configuration of an item within Fledge
  */
 class OperationDelivery
 {       
