@@ -21,9 +21,9 @@ Once you have created your notification rule and move on to the delivery mechani
 
     - **Service**: The name of the south service you wish to control
 
-    - **Trigger Value**: The operation payload to send to the south service when the rule triggers. This is the name of the operation to prform and a set of name, value pairs which are the optional parameters to pass that operations.
+    - **Trigger Value**: The operation payload to send to the south service when the rule triggers. This is the name of the operation to perform and a set of name, value pairs which are the optional parameters to pass that operations.
 
-    - **Cleared Value**: The operation payload to send to the south service when the rule clears. This is the name of the operation to prform and a set of name, value pairs which are the optional parameters to pass that operations.
+    - **Cleared Value**: The operation payload to send to the south service when the rule clears. This is the name of the operation to perform and a set of name, value pairs which are the optional parameters to pass that operations.
 
   - Enable the plugin and click *Next*
 
