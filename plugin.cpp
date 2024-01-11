@@ -24,14 +24,14 @@ using namespace rapidjson;
 
 #define TRIGGERED	QUOTE({				\
 			"operation" : "name",		\
-			"paremeters" : {		\
+			"parameters" : {		\
 				"name" : "value"	\
 			}				\
 		})
 
 #define CLEARED	 QUOTE({				\
 			"operation" : "name",		\
-			"paremeters" : {		\
+			"parameters" : {		\
 				"name" : "value"	\
 				}			\
 		})
