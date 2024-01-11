@@ -83,7 +83,7 @@ bool OperationDelivery::notify(const string& notificationName,
 	}
 
 	/*
-	 * Parse the triggerReason docuemnt and determine of this is a
+	 * Parse the triggerReason document and determine of this is a
 	 * trigger event or a clear event. Then set the value accordingly
 	 */
 	string value;
