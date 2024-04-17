@@ -24,14 +24,14 @@ using namespace rapidjson;
 
 #define TRIGGERED	QUOTE({				\
 			"operation" : "name",		\
-			"paremeters" : {		\
+			"parameters" : {		\
 				"name" : "value"	\
 			}				\
 		})
 
 #define CLEARED	 QUOTE({				\
 			"operation" : "name",		\
-			"paremeters" : {		\
+			"parameters" : {		\
 				"name" : "value"	\
 				}			\
 		})
@@ -48,7 +48,7 @@ static const char * default_config = QUOTE({
 		"default": PLUGIN_NAME,
 		"readonly": "true" },
 	"service": {
-		"description": "The south service to request the operaton on",
+		"description": "The south service to request the operation on",
 		"type": "string",
 		"default": "",
 		"order": "1",
@@ -100,7 +100,7 @@ PLUGIN_INFORMATION *plugin_info()
 /**
  * Initialise the plugin with configuration.
  *
- * This funcion is called to get the plugin handle.
+ * This function is called to get the plugin handle.
  */
 PLUGIN_HANDLE plugin_init(ConfigCategory* configData)
 {
