@@ -32,7 +32,7 @@ Once you have created your notification rule and move on to the delivery mechani
 Trigger Values
 --------------
 
-The **Trigger Value** and **Cleared Value** are JSON documents that are sent to the operation entry point of the south service. The format of these is a set of name and value pairs that represent the data to write via the south service. A simple example would be as below
+The **Trigger Value** and **Cleared Value** are JSON documents that are sent to the operation entry point of the south service. The format of these is a set of name and value pairs that represent the operation to execute via the south service. A simple example would be as below
 
 .. code-block:: JSON
 
