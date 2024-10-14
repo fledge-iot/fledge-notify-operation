@@ -54,7 +54,7 @@ We create a notification that is triggered if the **desiredSpeed** is greater th
    {
        "operation" : "ChangeFanSpeed",
        "parameters": {
-            "speed" : "$equipment.desiredSpeed$",
+            "speed" : "$equipment.desiredSpeed$"
        }
     }
 
