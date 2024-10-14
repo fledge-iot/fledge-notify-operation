@@ -4,6 +4,8 @@ Fledge operation notification delivery plugin
 
 The *fledge-notify-operation* plugin is designed to allow a notification to call an operation on a south service.
 
+`See documentation <docs/index.rst>`_
+
 Build
 -----
 To build Fledge "operation notification" C++ plugin. First we need to set environment variable NOTIFICATION_SERVICE_INCLUDE_DIRS and set path of include directory from fledge-service-notification source.
