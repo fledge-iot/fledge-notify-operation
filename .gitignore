@@ -1,0 +1,14 @@
+# vi
+*.swp
+
+# MacOS Finder
+.DS_Store
+._*
+
+# build
+build
+
+# Editor
+.idea/
+
+libplctag
