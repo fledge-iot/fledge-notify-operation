@@ -260,10 +260,14 @@ void OperationDelivery::dataSubstitution(string& message, const Value& obj)
 						snprintf(buf, sizeof(buf), "%ld", dpv.GetInt64());
 						rval.append(buf);
 					}
+					else
+					{
+						Logger::getLogger()->debug("Unsupported data type, Only Numbers & strings are supported.");
+					}
 				}
 				else
 				{
-					Logger::getLogger()->error("There is no datapoint '%s' in the '%s asset received",
+					Logger::getLogger()->error("There is no datapoint '%s' in the '%s' asset received",
 						       datapoint.c_str(), asset.c_str());
 				}
 			}
